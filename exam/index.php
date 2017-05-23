@@ -16,7 +16,7 @@
   </head>
   <body>
   	<?php include "navbar.php"; ?>
-    <div class="container-fluid">
+  <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="text-center">
@@ -25,26 +25,35 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<div class="btn-group btn-group-lg">
-				 
-				<button class="btn btn-default" type="button">
-					Subject1
-				</button> 
-				<button class="btn btn-default" type="button">
-					Subject2
-				</button> 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="btn-group btn-group">
+					 
+					<button class="btn btn-default" type="button">
+						Subject1
+					</button> 
+					<button class="btn btn-default" type="button">
+						Subject2
+					</button> 
+				</div>
 			</div>
-		</div>
-		<div class="col-md-6">
+			<div class="col-md-4 timer">
+				Time icon: <span class="glyphicon glyphicon-time"></span>
+				<a id="demo" style="text-align: center;font-size: 20px;"></a>
+			</div>
+			<script src="js/timer.js" ></script>
 		</div>
 	</div>
+	<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
-			<h3>
-				Question Number:
-			</h3>
+			<div class="panel panel-default">
+				<h3>
+					Question Number:
+				</h3>
+			</div>
+			
 			<p>
 				Question Body
 			</p>
@@ -92,10 +101,17 @@
 		        </div>
 		      </div>
 		    </div>
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">
-						Sign in
-					</button>
+				<div class="col-md-8">
+					<div class="col-sm-6">
+						<button type="submit" class="btn btn-warning">
+							Mark For Review
+						</button>
+					</div>
+					<div class="col-sm-6">
+						<button type="submit" class="btn btn-success">
+							Submit And Next Question
+						</button>
+					</div>
 				</div>
 			</form>
 		</div>
@@ -123,6 +139,11 @@
 				  <li><a href="#">4</a></li>
 				  <li><a href="#">5</a></li>
 				</ul>
+			</div>
+			<div>
+				<span class="label label-default">Not Appeared</span>
+				<span class="label label-warning">Marked For Review</span>
+				<span class="label label-success">Submitted</span>
 			</div>
 			<div class="col-sm-2">
 				<a href="#" class="btn" type="button">END EXAM</a>
