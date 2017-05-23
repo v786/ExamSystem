@@ -15,160 +15,45 @@
 
   </head>
   <body>
-  	<?php include "navbar.php"; ?>
-  <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="text-center">
-			  <h1>Heading For Exam</h1>
-			  <p>Sub Heading</p> 
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="btn-group btn-group">
-					 
-					<button class="btn btn-default" type="button">
-						Subject1
-					</button> 
-					<button class="btn btn-default" type="button">
-						Subject2
-					</button> 
-				</div>
-			</div>
-			<div class="col-md-4 timer">
-				Time icon: <span class="glyphicon glyphicon-time"></span>
-				<a id="demo" style="text-align: center;font-size: 20px;"></a>
-			</div>
-			<script src="js/timer.js" ></script>
-		</div>
-	</div>
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<h3>
-					Question Number:
-				</h3>
-			</div>
-			
-			<p>
-				Question Body
-			</p>
-			<h3>
-				Select Answer:
-			</h3>
-			<form class="form-horizontal" role="form">
-				<div class="form-group">        
-		      <div class=" col-sm-10">
-		        <div class="checkbox">
-		          <label>
-		          	<input type="checkbox" name="remember">
-		          	Option 1
-		          </label>
-		        </div>
-		      </div>
-		    </div>
-		    <div class="form-group">        
-		      <div class="col-sm-10">
-		        <div class="checkbox">
-		          <label>
-			          <input type="checkbox" name="remember">
-			          Option 2
-		          </label>
-		        </div>
-		      </div>
-		    </div>
-		    <div class="form-group">        
-		      <div class="col-sm-10">
-		        <div class="checkbox">
-		          <label>
-			          <input type="checkbox" name="remember">
-			          Option 3
-		          </label>
-		        </div>
-		      </div>
-		    </div>
-		    <div class="form-group">        
-		      <div class="col-sm-10">
-		        <div class="checkbox">
-		          <label>
-		          	<input type="checkbox" name="remember">
-		          	Option 4
-		          </label>
-		        </div>
-		      </div>
-		    </div>
-				<div class="col-md-8">
-					<div class="col-sm-6">
-						<button type="submit" class="btn btn-warning">
-							Mark For Review
-						</button>
-					</div>
-					<div class="col-sm-6">
-						<button type="submit" class="btn btn-success">
-							Submit And Next Question
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="col-md-4">
-			<blockquote>
-				<p>
-					Exam Name :TEST5
-				</p> <small>Section Name:<cite> PHYSICS-JEEMAIN</cite></small>
-			</blockquote>
-			<div class="col-md-12">
-				<ul class="pagination">
-				  <li><a href="#">1</a></li>
-				  <li class="active"><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#">1</a></li>
-				  <li class="active"><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#">1</a></li>
-				  <li class="active"><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				</ul>
-			</div>
-			<div>
-				<span class="label label-default">Not Appeared</span>
-				<span class="label label-warning">Marked For Review</span>
-				<span class="label label-success">Submitted</span>
-			</div>
-			<div class="col-sm-2">
-				<a href="#" class="btn" type="button">END EXAM</a>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-center">
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-center">
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-center">
-				Footer
-			</h3>
-		</div>
-	</div>
+    <?php include "navbar.php"; ?>
+   
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <div class="panel panel-default">
+        <div class="panel-heading">List Of All Tests</div>
+        <div class="panel-body">
+          <div class="col-md-12 well well-sm">
+          Test Name
+          <a href="exam.php" type="button" class="btn btn-default" style="float: right;">Appear</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">
+        Footer
+      </h3>
+    </div>
+  </div>
 </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -10,9 +10,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index">Home</a></li>
         <li><a href="#">Profile</a></li>
         <li><a href="#">Help</a></li>
+        <li><a href="exam.php">take test</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
