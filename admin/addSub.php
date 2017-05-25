@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php include "head.php" ;?>
 
-    <title>Online Exam System</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-  </head>
-  <body>
     <?php include "navbar.php"; ?>
    
 <div class="container-fluid text-center">    
@@ -20,18 +8,23 @@
     <!-- Empty Space-->
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
+      <h1>Add New Subject</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
-      <div class="panel panel-default">
-        <div class="panel-heading">List Of All Tests</div>
-        <div class="panel-body">
-          <div class="col-md-12 well well-sm">
-          Test Name
-          <a href="exam.php" type="button" class="btn btn-default" style="float: right;">Appear</a>
-          </div>
+      <form method="post" action="addSub.php" enctype="multipart/form-data">      
+        <div class="input-group">
+          <span class="input-group-addon">Name</span>
+          <input id="msg" type="text" class="form-control" name="name" placeholder="Additional Info">
         </div>
-      </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">Branch</span>
+          <input id="msg" type="text" class="form-control" name="branch" placeholder="Additional Info">
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary" name="addSub">Add Subject</button>
+      </form>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -42,11 +35,25 @@
       </div>
     </div>
   </div>
-</div>
-</div>
+</div>\
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <?php include "footer.php"?>
-  </body>
-</html>
+<?php include "footer.php" ?>
+<?php
+  include "../db/dbconn.php";
+  include "../db/lib.php";  
+  if(isset($_POST['addSub'])){
+    $subject = $_POST['name'];
+    $branch = $_POST['branch'];
+
+    $inq = "INSERT into Subject VALUES (NULL,'$subject','$branch')";
+    $query = mysqli_query($dbcon,$inq);
+    if($query){
+      shout("Subject Added");
+    }
+    else{
+      shout("Error");
+    }
+  }
+?>

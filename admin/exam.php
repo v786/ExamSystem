@@ -32,7 +32,7 @@
 	</div>
 	<div class="container-fluid">
 	<div class="row">
-		<?php include "getQues.php"?>
+		<?php include "getQues.php" ?>
 		<div class="col-md-4" style="background-color: #bfbfff;">
 			<div class="panel" style="padding: 5px; margin-top: 12%;">
 				<p>
