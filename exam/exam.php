@@ -165,7 +165,7 @@
 				<span class="label label-success">Submitted</span>
 			</div>
 			<div class="col-sm-2">
-				<a href="#" class="btn" type="button">END EXAM</a>
+				<a href="getResult.php" class="btn" type="button">END EXAM</a>
 			</div>
 		</div>
 	</div>
@@ -182,6 +182,13 @@
 		</div>
 	</div>
 </div>
+    <script type="text/javascript">
+      var stillAlive = setInterval(function () {
+          /* XHR back to server
+             Example uses jQuery */
+          $.get("stillAlive.php?page=time");
+      }, 6000);
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
