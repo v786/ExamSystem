@@ -187,7 +187,7 @@
           /* XHR back to server
              Example uses jQuery */
           $.get("stillAlive.php?page=time");
-      }, 6000);
+      }, 1000);
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
